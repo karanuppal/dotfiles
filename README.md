@@ -1,16 +1,21 @@
-# dotfiles-bootstrap
+# training-dev-config
 This is a starter-kit for dotfiles organization at Bloomberg.  It is intentionally kept small and minimal.  The idea is to get the basic framework in place with the minimum amount of code, so that you can read and understand every line.
 
 These are your personal tools.  You should fork them and modify them to suit your tastes.
 
+For more details about included features and how to use them, see the notes from my [presentation.](https://bbgithub.dev.bloomberg.com/bhipple/tooling-pointers)
+Feel free to submit PRs if anything is missing, or ask me questions.
+
 ## Getting Started
 ```shell
-git clone bbgithub:TODO ~/dotfiles
+git clone bbgithub:new-hire-training-initiatives/training-dev-config
+~/dotfiles
 cd ~/dotfiles
 ./install
 ```
 By default, dotbot will not overwrite files that already exist. If you see failures, move those
-files to `.sav` versions and re-run.
+files to `.sav` versions and re-run.  Once everything has been setup,
+you can permanently remove the `bootstrap.sh` script.
 
 ## Features
 * Symlink management with [dotbot](http://www.anishathalye.com/2014/08/03/managing-your-dotfiles/)
