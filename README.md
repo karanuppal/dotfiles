@@ -50,3 +50,6 @@ Once you feel comfortable with the tools provided, here are some ideas for furth
     - [And his dotfiles_local with Bloomberg customizations](https://bbgithub.dev.bloomberg.com/mlongob1/dotfiles-local)
     - Many people put their dotfiles on [github](http://dotfiles.github.io/)
         * It's up to you, but I'd caution against pulling too many huge, heavyweight frameworks at once!
+        * Your tools should be an ongoing continuous improvement process, and it's easiest to do that if you understand them!
+* [The Pragmatic Programmer](https://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X) and [Practical Vim](https://pragprog.com/book/dnvim/practical-vim) have lots of great advice.
+* [vimcasts.org](http://vimcasts.org/) has many short videos with great tips.
