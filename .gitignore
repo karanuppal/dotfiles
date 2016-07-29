@@ -1,0 +1,11 @@
+*.hi
+*.log
+*.o
+*.pyc
+bin/hub
+nodes
+tags
+tmux/plugins
+vim/autoload/plug.vim.old
+
+!tmux/plugins/tpm

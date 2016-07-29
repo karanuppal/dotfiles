@@ -1,0 +1,30 @@
+#!/bin/sh
+# This pre-commit hook runs common linters on files that have changed
+# To enable, uncomment the linter invocations you'd like to use.
+
+lint()
+{
+    fileregex="$1"
+    binary="$2"
+    files=$(git diff --name-only --diff-filter=ACMRTUXB --cached -- "$fileregex")
+
+    if [ -z "$files" ]; then
+        return
+    fi
+
+    lint=$(echo "$files" | xargs "$binary")
+    if [ "$?" -ne "0" ]; then
+        echo "$binary linting errors:"
+        echo "$lint"
+        exit 1
+    fi
+}
+
+# Run shellcheck on changed shell files
+#lint "*.sh" "shellcheck"
+
+# Run pyflakes on changed Python files
+#lint "*.py" "pyflakes"
+
+# Run hlint on changed Haskell files
+#lint "*.hs" "hlint"

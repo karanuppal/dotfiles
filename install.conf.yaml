@@ -1,0 +1,29 @@
+- clean: ['~']
+- defaults:
+    link:
+        create: true
+        relink: true
+
+- link:
+    ~/.dotfiles: ''
+    ~/.bash: bash/
+    ~/.bashrc: bashrc
+    ~/.clang-format: clang-format
+    ~/.git_template: git_template/
+    ~/.gitconfig: gitconfig
+    ~/.inputrc: inputrc
+    ~/.tmux.conf: tmux.conf
+    ~/.vim: vim/
+    ~/.vimrc: vimrc
+    ~/.ycm_extra_conf.py: ycm_extra_conf.py
+    ~/bin: bin/
+    ~/.gitconfig:
+        force: true
+        path: gitconfig
+
+- shell:
+  - [git submodule update --init --recursive, Updating submodules]
+  - command: vim +PlugUpdate +PlugUpgrade +qall
+    stdin: true
+    stdout: true
+    stderr: true
