@@ -8,8 +8,7 @@ Feel free to submit PRs if anything is missing, or ask me questions.
 
 ## Getting Started
 ```shell
-git clone bbgithub:new-hire-training-initiatives/training-dev-config
-~/dotfiles
+git clone bbgithub:new-hire-training-initiatives/training-dev-config ~/dotfiles
 cd ~/dotfiles
 ./install
 ```
