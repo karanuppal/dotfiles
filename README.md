@@ -29,14 +29,18 @@ you can permanently remove the `bootstrap.sh` script.
 * tmux with vim-like movement bindings
 
 ### A note on YouCompleteMe
-I've commented out the vim plugin YouCompleteMe.  This plugin is extremely powerful, but it
-noticeably slows down vim startup time and takes a little bit of work to configure.
+This plugin is extremely powerful, but it noticeably slows down vim startup
+time and takes a little bit of work to configure, so I've left it off by default.
 
 If you're interested in using it, uncomment it from `vim/startup/plugins.vim` and run:
 ```
-cd bin && LOCUM_ARCH=linux locum bb_youcompleteme_install.sh
+$ cd bin && LOCUM_ARCH=linux locum bb_youcompleteme_install.sh
 ```
+
 I'd advise staying away from the semantic LLVM + clang auto-completion engine to start.
+Unless you have a very clean, Linux-only, no-bbenv application, it will either not work
+at all or it will use >15 GB of RAM to run, which is far more than the sysadmins will let
+you get away with on a GNRL machine.
 
 ## Further Inspiration
 As mentioned previously, this is repo kept small to avoid making it unapproachable and intimidating.
