@@ -37,3 +37,6 @@
 [http "https://bbgithub.dev.bloomberg.com"]
     proxy = https://bproxy.tdmz1.bloomberg.com:80
     sslVerify = false
+[user]
+	email = kuppal8@bloomberg.net
+	name = Karan Uppal
