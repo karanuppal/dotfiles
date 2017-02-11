@@ -24,7 +24,7 @@ function! FixIncludeGuard()
         return
     endif
 
-    let correctGuard = 'INCLUDED_' . toupper(expand('%:t:r'))
+    let correctGuard = 'INCLUDED_' . toupper(expand('%:t:r'))  . '_H'
 
     let curLine = 0
     let found = 0
