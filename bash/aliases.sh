@@ -18,3 +18,5 @@ alias plink="plink -d local"
 alias vpub="vpr.pl publish"
 alias vrel="vpr.pl release"
 alias vprel="vpr.pl publish -rel"
+
+alias git="hub"

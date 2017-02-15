@@ -22,6 +22,9 @@ Plug 'tpope/vim-repeat'                                    " Dot operator for pl
 Plug 'tpope/vim-surround'                                  " Surrounding text
 Plug 'tpope/vim-unimpaired'                                " Pairs of keyboard mappings for common tasks
 Plug 'tpope/vim-vinegar'                                   " netrw improvement
+Plug 'scrooloose/nerdtree'                                 " shows directory structure
+Plug 'Xuyuanp/nerdtree-git-plugin'                         " git markings next to the dir structure
+Plug 'joshdick/onedark.vim'
 
 if g:platform == "Linux" || g:platform == "Darwin"
     Plug 'SirVer/ultisnips'               " Text snippets

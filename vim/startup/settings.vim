@@ -15,6 +15,8 @@ let g:platform = GetPlatform()
 " To enable the saving and restoring of screen positions.
 let g:screen_size_restore_pos = 1
 
+let g:clang_library_path='/opt/bb/lib64/libclang.so.3.6'
+
 "" ============================================================================
 ""                            Editing and Moving
 "" ============================================================================
@@ -84,6 +86,8 @@ set grepprg="git"
 setlocal comments-=://
 setlocal comments+=f://
 
+set makeprg=ctags\ --languages=C++\ -R\ .\ &&\ /home/kuppal8/build
+
 "" ============================================================================
 ""                                Appearances
 "" ============================================================================
@@ -120,6 +124,3 @@ autocmd FileType xml setlocal equalprg=xmllint\ --format\ -
 
 " Markdown
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
-
-" source vimrc automatically after its saved
-autocmd bufwritepost .vimrc source $MYVIMRC

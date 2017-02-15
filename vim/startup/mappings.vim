@@ -75,3 +75,6 @@ nnoremap <Leader>w :call StripTabsAndTrailingWhitespaces()<CR>:w<CR>
 " Note - l and q are used for the location list and quickfix toggle by ListToggle
 nnoremap <Leader>p :pclose<CR>
 
+" NERDTree remapping
+nnoremap <Leader>n :NERDTreeToggle<CR>
+let NERDTreeIgnore=['\.o$', '\.tsk$', '^00', '^ported\.', '\.mapfile$']
