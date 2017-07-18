@@ -8,15 +8,11 @@
     ~/.dotfiles: ''
     ~/.bash: bash/
     ~/.bashrc: bashrc
-    ~/.bbprofile: bbprofile
-    ~/.clang-format: clang-format
     ~/.git_template: git_template/
     ~/.gitconfig: gitconfig
-    ~/.inputrc: inputrc
     ~/.tmux.conf: tmux.conf
     ~/.vim: vim/
     ~/.vimrc: vimrc
-    ~/.ycm_extra_conf.py: ycm_extra_conf.py
     ~/bin: bin/
     ~/.gitconfig:
         force: true

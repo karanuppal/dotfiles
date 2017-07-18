@@ -32,7 +32,7 @@ if g:platform == "Linux" || g:platform == "Darwin"
     " This one is extremely powerful, but also somewhat slow on the shared dev
     " machines.  If you do decide to use it, take a look at
     " ~/bin/bb_youcompleteme_install.sh
-    Plug 'Valloric/YouCompleteMe'
+    "Plug 'Valloric/YouCompleteMe'
 endif
 
 call plug#end()
