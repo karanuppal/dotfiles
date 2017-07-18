@@ -17,6 +17,9 @@
     ~/.gitconfig:
         force: true
         path: gitconfig
+    ~/.bash_profile:
+        force: true
+        path: bash_profile
 
 - shell:
   - [git submodule update --init --recursive, Updating submodules]

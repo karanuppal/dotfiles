@@ -14,7 +14,6 @@ save_path() {
 
 backup() {
     save_path "$HOME/.bashrc"
-    save_path "$HOME/.bbprofile"
     save_path "$HOME/.gitconfig"
     save_path "$HOME/.vim"
 }

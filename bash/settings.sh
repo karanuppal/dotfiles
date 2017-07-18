@@ -11,24 +11,10 @@ export EDITOR=vim
 # Reduce delay to 0.1 seconds for switching to normal mode with ESC
 export KEYTIMEOUT=1
 
-export PATH=$PATH:/opt/swt/bin
-
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
-
-export HTTP{,S}_PROXY="devproxy.bloomberg.com:82"
-export http{,s}_proxy="devproxy.bloomberg.com:82"
-export no_proxy="localhost,.dev.bloomberg.com,127.0.0.0/8,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16"
-
-# adds libnlp installation to python path
-# libnlp doesn't work with ananconda python
-export PYTHONPATH=/bb/bigstorn/news/libnlp/dist/python:$PYTHONPATH
-
-# redirect tmpdir
-export TMPDIR=/bb/news/data/tmp
-
 
 ## ============================================================================
 ##                                 Settings
