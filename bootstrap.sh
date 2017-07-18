@@ -1,13 +1,9 @@
-#!/opt/bb/bin/bash
+#!/usr/bin/env bash
 # Some very basic bootstrapping to make sure the first ./install succeeds
 # without destroying your entire environment.
 
 proxies() {
     cp -f gitconfig ~/.gitconfig
-
-    export HTTP{,S}_PROXY="devproxy.bloomberg.com:82"
-    export http{,s}_proxy="devproxy.bloomberg.com:82"
-    export no_proxy="localhost,.dev.bloomberg.com,127.0.0.0/8,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16"
 }
 
 save_path() {
