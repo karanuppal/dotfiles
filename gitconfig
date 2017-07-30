@@ -29,3 +29,10 @@
 [user]
 	email = karan.uppal711@gmail.com
 	name = Karan Uppal
+[push]
+  default = simple
+[http]
+  sslVerify = false
+[credential]
+  helper = osxkeychain
+
