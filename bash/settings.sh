@@ -16,6 +16,8 @@ export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 
+export PIP_CONFIG_FILE=$HOME/.config/pip/pip.conf
+
 export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\]$ "
 
 # this combined with tinyproxy running allows connections with both bbg and outside world
