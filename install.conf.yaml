@@ -9,17 +9,18 @@
     ~/.bash: bash/
     ~/.bashrc: bashrc
     ~/.git_template: git_template/
-    ~/.gitconfig: gitconfig
     ~/.tmux.conf: tmux.conf
     ~/.vim: vim/
     ~/.vimrc: vimrc
-    ~/bin: bin/
     ~/.gitconfig:
         force: true
         path: gitconfig
     ~/.bash_profile:
         force: true
         path: bash_profile
+    ~/.ssh/config:
+        force: true
+        path: ssh_config
 
 - shell:
   - [git submodule update --init --recursive, Updating submodules]
