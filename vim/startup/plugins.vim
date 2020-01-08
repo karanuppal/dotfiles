@@ -25,15 +25,6 @@ Plug 'scrooloose/nerdtree'                                 " shows directory str
 Plug 'Xuyuanp/nerdtree-git-plugin'                         " git markings next to the dir structure
 Plug 'joshdick/onedark.vim'
 
-if g:platform == "Linux" || g:platform == "Darwin"
-    Plug 'SirVer/ultisnips'               " Text snippets
-
-    " This one is extremely powerful, but also somewhat slow on the shared dev
-    " machines.  If you do decide to use it, take a look at
-    " ~/bin/bb_youcompleteme_install.sh
-    "Plug 'Valloric/YouCompleteMe'
-endif
-
 call plug#end()
 
 "" ============================================================================

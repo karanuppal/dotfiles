@@ -1,6 +1,11 @@
-Host github*
+Host github.com-karanuppal
     HostName github.com
-    IdentityFile ~/.ssh/github
+    IdentityFile ~/.ssh/github_personal
+    User git
+
+Host github.com-karanuppal-df
+    HostName github.com
+    IdentityFile ~/.ssh/github_df
     User git
 
 Host gitlab*

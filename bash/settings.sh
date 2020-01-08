@@ -29,3 +29,6 @@ shopt -s checkwinsize
 
 # Vim bindings
 set -o vi
+
+#git bash completion
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
