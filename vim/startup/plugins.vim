@@ -6,7 +6,6 @@ Plug 'benmills/vimux'                                      " Vim and Tmux Integr
 Plug 'christoomey/vim-tmux-navigator'                      " Window/Pane switching with Vim and Tmux
 Plug 'ctrlpvim/ctrlp.vim'                                  " File searchin and opening
 Plug 'derekwyatt/vim-fswitch', { 'for': 'cpp' }            " Fastswitch (cpp/h toggle)
-Plug 'honza/vim-snippets'                                  " Generic snippets for UltiSnips
 Plug 'kana/vim-operator-user'                              " Library to assist with writing custom operators
 Plug 'majutsushi/tagbar'                                   " Using for JavaScript
 Plug 'mhinz/vim-grepper'                                   " Asynchronous Grep -> QuickFix List

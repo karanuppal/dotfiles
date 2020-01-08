@@ -5,6 +5,8 @@
     # Nice, colorful graph visualization
     lg = log --decorate --oneline --graph --branches --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold blue)(%ar) %C(bold yellow)%d%C(reset) %C(green)%s%C(reset) %C(dim green)- %an%C(reset)'
     logdog = log --decorate --oneline --graph
+    st = status
+    ci = commit
 
 [color]
     ui = true
@@ -27,7 +29,7 @@
 [grep]
     lineNumber = true
 [user]
-	email = karan.uppal711@gmail.com
+	email = karan@deepfraud.com 
 	name = Karan Uppal
 [push]
   default = simple

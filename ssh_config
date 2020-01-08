@@ -1,8 +1,3 @@
-Host bbgithub*
-    HostName bbgithub.dev.bloomberg.com
-    IdentityFile ~/.ssh/bbgithub/id_rsa
-    User git
-
 Host github*
     HostName github.com
     IdentityFile ~/.ssh/github
@@ -12,48 +7,3 @@ Host gitlab*
     HostName gitlab.com 
     IdentityFile ~/.ssh/gitlab
     User git
-
-Host *.bloomberg.com
-    ControlMaster auto
-    ControlPath ~/.ssh/sockets/%r@%h-%p
-    ControlPersist 8h
-    StrictHostKeyChecking no
-    PasswordAuthentication no
-    PubkeyAuthentication yes
-    ForwardX11 yes
-
-Host v5prod
-    Hostname v5prodgateway.bdns.bloomberg.com
-    IdentityFile ~/.toolkit/toolkit_ssh_key_kuppal8
-    IdentitiesOnly yes
-    ControlMaster auto
-    ControlPath ~/.ssh/sockets/%r@%h-%p
-    ControlPersist 8h
-
-Host v5dev
-    Hostname v5devgateway.bdns.bloomberg.com
-    IdentityFile ~/.toolkit/toolkit_ssh_key_kuppal8
-    IdentitiesOnly yes
-    ControlMaster auto
-    ControlPath ~/.ssh/sockets/%r@%h-%p
-    ControlPersist 8h
-    ForwardAgent yes
-    ForwardX11 yes
-
-Host devsftp
-    HostName devsftp.dev.bloomberg.com
-    Port 2222
-    IdentityFile ~/.ssh/id_rsa.openssh
-
-Host default
-  HostName 127.0.0.1
-  User vagrant
-  Port 2222
-  UserKnownHostsFile /dev/null
-  StrictHostKeyChecking no
-  PasswordAuthentication no
-  IdentityFile /Users/kuppal8/.vagrant.d/insecure_private_key
-  IdentitiesOnly yes
-  LogLevel FATAL
-  ForwardAgent yes
-  ForwardX11 yes
