@@ -32,3 +32,9 @@ set -o vi
 
 #git bash completion
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+
+# atom from command line
+ln -s -f /Applications/Atom.app/Contents/Resources/app/atom.sh /usr/local/bin/atom
+
+# google cloud credentials
+export GOOGLE_APPLICATION_CREDENTIALS=/Users/karanuppal/.ssh/spry-effect-244215-e315ef5bd119.json

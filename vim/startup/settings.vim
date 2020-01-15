@@ -57,9 +57,6 @@ set splitright
 " for horizontal split open at bottom
 set splitbelow
 
-" Ignore whitespace on diffs
-set diffopt+=iwhite
-
 " Smart case sensitivity
 set ignorecase
 set smartcase
