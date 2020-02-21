@@ -13,7 +13,17 @@ Host github.com-karanuppal-df
     IdentityFile ~/.ssh/github_df
     User git
 
-Host gitlab*
-    HostName gitlab.com 
+Host gitlab.com-karanuppal
+    HostName gitlab.com
     IdentityFile ~/.ssh/gitlab
     User git
+
+Host gitlab.com-karanuppal-df
+    HostName gitlab.com
+    IdentityFile ~/.ssh/gitlab_df
+    User git
+
+Host 34.74.234.146
+    HostName 34.74.234.146
+    IdentityFile ~/.ssh/gcp
+    User karanuppal
