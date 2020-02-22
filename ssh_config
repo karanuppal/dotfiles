@@ -27,3 +27,8 @@ Host 34.74.234.146
     HostName 34.74.234.146
     IdentityFile ~/.ssh/gcp
     User karanuppal
+
+Host 35.233.165.91
+    HostName 35.233.165.91
+    IdentityFile ~/.ssh/jupyter
+    User jupyter
