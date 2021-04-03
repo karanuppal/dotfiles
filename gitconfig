@@ -29,8 +29,8 @@
 [grep]
     lineNumber = true
 [user]
-	email = karan@deepfraud.com 
-	name = Karan Uppal
+	email = karan@evolutioniq.com
+	name = karan-evoiq
 [push]
   default = simple
 [http]
@@ -38,3 +38,8 @@
 [credential]
   helper = osxkeychain
 
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
