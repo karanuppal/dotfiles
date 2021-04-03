@@ -23,12 +23,38 @@ Host gitlab.com-karanuppal-df
     IdentityFile ~/.ssh/gitlab_df
     User git
 
-Host 34.74.234.146
-    HostName 34.74.234.146
-    IdentityFile ~/.ssh/gcp
-    User karanuppal
+Host karan-large
+    HostName compute.294585452442693386
+    IdentityFile /Users/karanuppal/.ssh/google_compute_engine
+    CheckHostIP no
+    HostKeyAlias compute.294585452442693386
+    IdentitiesOnly yes
+    StrictHostKeyChecking yes
+    UserKnownHostsFile /Users/karanuppal/.ssh/google_compute_known_hosts
+    ProxyCommand /System/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python /Users/karanuppal/workspace/google-cloud-sdk/lib/gcloud.py beta compute start-iap-tunnel karan-large %p --listen-on-stdin --project=spry-effect-244215 --zone=us-west1-b --verbosity=warning
+    ProxyUseFdpass no
+    User jupyter
 
-Host 35.233.165.91
-    HostName 35.233.165.91
-    IdentityFile ~/.ssh/jupyter
+Host karan-large-e2
+    HostName compute.2538843325024748824
+    IdentityFile /Users/karanuppal/.ssh/google_compute_engine
+    CheckHostIP no
+    HostKeyAlias compute.2538843325024748824
+    IdentitiesOnly yes
+    StrictHostKeyChecking yes
+    UserKnownHostsFile /Users/karanuppal/.ssh/google_compute_known_hosts
+    ProxyCommand /System/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python /Users/karanuppal/workspace/google-cloud-sdk/lib/gcloud.py beta compute start-iap-tunnel karan-large-e2 %p --listen-on-stdin --project=spry-effect-244215 --zone=us-west1-b --verbosity=warning
+    ProxyUseFdpass no
+    User jupyter
+
+Host compute.5538303877307563969
+    HostName compute.5538303877307563969
+    IdentityFile /Users/karanuppal/.ssh/google_compute_engine
+    CheckHostIP no
+    HostKeyAlias compute.5538303877307563969
+    IdentitiesOnly yes
+    StrictHostKeyChecking yes
+    UserKnownHostsFile /Users/karanuppal/.ssh/google_compute_known_hosts
+    ProxyCommand /System/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python -S /Users/karanuppal/workspace/google-cloud-sdk/lib/gcloud.py beta compute start-iap-tunnel karan-second-vm %p --listen-on-stdin --project=spry-effect-244215 --zone=us-east4-c --verbosity=warning
+    ProxyUseFdpass no
     User jupyter

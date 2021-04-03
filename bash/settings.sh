@@ -37,4 +37,6 @@ set -o vi
 ln -s -f /Applications/Atom.app/Contents/Resources/app/atom.sh /usr/local/bin/atom
 
 # google cloud credentials
-#export GOOGLE_APPLICATION_CREDENTIALS=/Users/karanuppal/.ssh/spry-effect-244215-e315ef5bd119.json
+export GOOGLE_APPLICATION_CREDENTIALS=/Users/karanuppal/.ssh/karanuppal-spry-effect-244215.json
+
+export PATH=$PATH:$HOME/.cargo/bin
